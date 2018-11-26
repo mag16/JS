@@ -26,6 +26,7 @@
 
 val = parseInt('100');
 val = parseFloat('100.30');
+val
 
 
 //output
