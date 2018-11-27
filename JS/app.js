@@ -37,6 +37,7 @@
 const firstName = 'William';
 const lastName = 'Jones';
 const age = 36;
+const str = 'Hello there my name is Marco'
 
 let val;
 
@@ -86,3 +87,30 @@ console.log(val); // (3) prints out the position of the last letter l.
 // charAt()
 val = firstName.charAt('2');
 console.log(val); // Prints out l.  second letter in William from index 0.
+
+// Get last Char
+val = firstName.charAt(firstName.length - 1);
+console.log(val); // m
+
+// substring()
+val = firstName.substring(0, 4);
+console.log(val); // Will
+
+// slice()
+val = firstName.slice(0, 4);
+console.log(val); // Will
+val = firstName.slice(-3);
+console.log(val); // iam  prints out last 3 letters (William)
+
+// split()
+val = str.split(' ');
+
+console.log(val);
+
+// replace()
+val = str.replace('Marco', 'Jack');
+console.log(val); // Marco gets replaced with the name Jack.
+
+// includes()
+val = str.includes('Hello');
+console.log(val); // gives true or false value if in string, as Hello included in str above.
